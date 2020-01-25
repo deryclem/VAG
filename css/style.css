@@ -1,6 +1,6 @@
 html {
     background-color: #f8b00d;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -18,29 +18,38 @@ header img {
 
 
 
- .grid {
+.grid {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 
- .fallWinter {
-position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.fallWinter {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    width: 70%;
+    text-align: center;
+    vertical-align: middle;
+    RIGHT: 0;
+    margin: auto;
+    padding: 100px 0;
 }
 
-    .grid div:first-child {
-        grid-area: 1 / 1 / 2 / 3;
-    }
+.grid div:first-child {
+    grid-area: 1 / 1 / 2 / 3;
+    position: relative;
+}
 
-        .grid div img {
-            display: block;
-            height: auto;
-            width: 100%;
-        }
+.grid div img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
 
 footer .separator {
     margin-top: 100px;
@@ -68,6 +77,7 @@ footer a {
     color: #27215b;
     font-weight: 600;
 }
+
 .socialNetworks {
     text-align: center;
 }
